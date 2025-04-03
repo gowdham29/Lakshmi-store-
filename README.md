@@ -1,40 +1,24 @@
-<!DOCTYPE html><html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakshmi Store</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Lakshmi Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#cart">Cart</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header><section id="products">
-    <h2>Our Products</h2>
-    <div class="product" id="product1">
-        <p>Product 1 - $10</p>
-        <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
-    </div>
-    <div class="product" id="product2">
-        <p>Product 2 - $20</p>
-        <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
-    </div>
-</section>
+/* styles.css */
 
-<section id="cart">
-    <h2>Shopping Cart</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: $<span id="total">0</span></p>
-</section>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; }
 
-<script src="script.js"></script>
+header { background-color: #007bff; color: white; padding: 15px; text-align: center; }
 
-</body>
-</html>
+nav ul { list-style-type: none; padding: 0; display: flex; justify-content: center; background-color: #0056b3; }
+
+nav ul li { margin: 0 15px; }
+
+nav ul li a { color: white; text-decoration: none; font-size: 18px; padding: 10px; display: block; }
+
+nav ul li a:hover { background-color: #003d80; border-radius: 5px; }
+
+h1, h2 { text-align: center; }
+
+section { padding: 20px; text-align: center; }
+
+.product { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; background-color: white; border-radius: 5px; }
+
+button { background-color: #28a745; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
+
+button:hover { background-color: #218838; }
+
